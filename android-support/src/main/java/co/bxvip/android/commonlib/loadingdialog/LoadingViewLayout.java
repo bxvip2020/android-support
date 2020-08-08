@@ -28,7 +28,7 @@ public class LoadingViewLayout extends RelativeLayout {
 
     private LinearLayout rootLinearLayout;
 
-    private TextView textView;
+//    private TextView textView;
 
     public BxToolIconView loadingBar;
 
@@ -52,9 +52,9 @@ public class LoadingViewLayout extends RelativeLayout {
                 .setDefaultBgColor(Color.BLACK)
                 .setCornerRadius(10)
                 .create());
-        textView = new TextView(context);
-        textView.setText("加载中");
-        textView.setTextColor(Color.LTGRAY);
+//        textView = new TextView(context);
+//        textView.setText("加载中");
+//        textView.setTextColor(Color.LTGRAY);
         LinearLayout.LayoutParams loadingBarParams = new LinearLayout.LayoutParams(dip2px(context, 60), dip2px(context, 60));
         loadingBarParams.gravity = CENTER;
         loadingBarParams.topMargin = dip2px(context, 15);
@@ -62,10 +62,10 @@ public class LoadingViewLayout extends RelativeLayout {
         loadingBar.setPadding(10, 10, 10, 10);
         loadingBar.createFlowerProgressBar().setDrawColor(Color.LTGRAY).draw();
         rootLinearLayout.addView(loadingBar, loadingBarParams);
-        LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        textParams.gravity = CENTER;
-        textParams.topMargin = dip2px(context, 15);
-        rootLinearLayout.addView(textView, textParams);
+//        LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        textParams.gravity = CENTER;
+//        textParams.topMargin = dip2px(context, 15);
+//        rootLinearLayout.addView(textView, textParams);
         LayoutParams rootParams = new LayoutParams(dip2px(context, 120), dip2px(context, 120));
         rootParams.addRule(CENTER_IN_PARENT);
         this.addView(rootLinearLayout, rootParams);
