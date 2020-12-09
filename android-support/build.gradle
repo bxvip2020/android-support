@@ -16,7 +16,7 @@ targetCompatibility = 1.8
 dependencies {
     compileOnly files(androidJar)
     compileOnly zxing, ormLiteLibs, glide, gson
-    compileOnly repluginplugin
+    compileOnly "com.qihoo360.replugin:replugin-plugin-lib:$replugin_version"
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
