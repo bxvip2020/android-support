@@ -1,6 +1,6 @@
 ext {
 
-    buildToolsVersion = '30.0.2'
+    buildToolsVersion = '26.0.2'
     compileSdkVersion = 26
     minSdkVersion = 14
     targetSdkVersion = 26
@@ -10,6 +10,8 @@ ext {
     zxingVersion = '3.3.0'
 
     anko_version = '0.10.5'
+
+    replugin_version = '2.2.4'
 
     filedownload_version = '0.0.2'
 
